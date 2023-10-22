@@ -42,6 +42,7 @@ function App() {
           />
         ))}
       </Container>
+      <div>Footer</div>
     </>
   );
 }
