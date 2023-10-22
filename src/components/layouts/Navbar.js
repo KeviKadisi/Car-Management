@@ -8,6 +8,7 @@ const Navbar = () => {
         <a className={classes.brand} href="/">
           Navbar
         </a>
+        <a href="/cars">Cars</a>
       </div>
     </nav>
   );
