@@ -1,0 +1,47 @@
+.car {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 28%;
+  background-color: #fff;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.model {
+  font-size: 16px;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.extraInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Added margin for separation */
+}
+
+.year {
+  font-size: 14px;
+  margin: 0;
+}
+
+.price {
+  font-size: 14px;
+  margin: 0;
+}
