@@ -1,8 +1,18 @@
-.container {
+.footer {
     background-color: #222222;
     padding: 80px;
     color: white;
     display: flex;
     justify-content: space-evenly;
-     
+    border-top: 2px solid #ddd;
 }
+.footer ul li strong {
+    font-size: 1.2em; 
+    display: block; 
+  }
+  
+  .footer ul li {
+    list-style: none; 
+    padding: 5px 0; 
+    font-size: 0.9em; 
+  }

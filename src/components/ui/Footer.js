@@ -3,24 +3,30 @@ import classes from './Footer.module.css';
 
 const Footer =() =>{
  return (
-    <div className={classes.container} >
+    <div className={classes.footer} >
       <ul>
-        <li>Mercedes-Benz</li>
-        <li>Bmw</li>
-        <li>Audi</li>
-        <li>Range Rover</li>
+        <li><strong>Mercedes-Benz</strong></li>
+        <li>Luxury</li>
+        <li>Elegance</li>
+        <li>Modern</li>
       </ul>
       <ul>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
+        <li><strong>Bmw</strong></li>
+        <li>Dynamic</li>
+        <li>High-quality</li>
+        <li>Sporty</li>
       </ul>
       <ul>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
-        <li>asdfaf</li>
+        <li><strong>Audi</strong></li>
+        <li>Tech</li>
+        <li>Elegant</li>
+        <li>Upscale interior</li>
+      </ul>
+      <ul>
+        <li><strong>Range Rover</strong></li>
+        <li>Stylish</li>
+        <li>Luxury SUV</li>
+        <li>Off-road</li>
       </ul>
     </div>
  );
