@@ -7,7 +7,7 @@ const Homepage = (props) => {
 
   useEffect(() => {
     fetch(
-      "https://car-managment-b1df2-default-rtdb.europe-west1.firebasedatabase.app/cars.json"
+      "https://car-management-5e8a2-default-rtdb.europe-west1.firebasedatabase.app/cars.json"
     )
       .then((response) => {
         if (response.ok) {
@@ -30,8 +30,8 @@ const Homepage = (props) => {
         {cars.map((car, index) => (
           <Card
             key={car.id}
-            image="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Mercedes-Benz_W223_IMG_3970.jpg/1200px-Mercedes-Benz_W223_IMG_3970.jpg"
-            title={car.title}
+            brand= {car.brand}
+            image={car.image}
             model={car.model}
             description={car.description}
             year={car.year}

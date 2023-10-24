@@ -3,7 +3,7 @@ import Navbar from "./components/layouts/Navbar";
 import Homepage from "./pages/Homepage";
 import NoPage from "./pages/Nopage";
 import Cars from "./pages/Cars";
-
+import Footer from "./components/ui/Footer";
 function App() {
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <div>Footer</div>
+      <Footer/>
     </>
   );
 }
