@@ -27,10 +27,11 @@ const Homepage = (props) => {
   return (
     <>
       <Container>
-        {cars.map((car, index) => (
+        {cars.map((car) => (
           <Card
             key={car.id}
-            brand= {car.brand}
+            id={car.id}
+            brand={car.brand}
             image={car.image}
             model={car.model}
             description={car.description}

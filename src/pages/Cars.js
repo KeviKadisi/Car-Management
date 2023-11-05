@@ -29,9 +29,10 @@ const Cars = () => {
     <>
       <Carfilter setCars={setCars} />
       <Container>
-        {cars.map((car, index) => (
+        {cars.map((car) => (
           <Card
             key={car.id}
+            id={car.id}
             brand={car.brand}
             image={car.image}
             model={car.model}
