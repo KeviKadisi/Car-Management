@@ -1,7 +1,7 @@
 import React from "react";
 
 const NoPage = () => {
-  return <p>Ska faqe ktu mer kar!</p>;
+  return <p>NO FILES </p>;
 };
 
 export default NoPage;

@@ -1,16 +1,16 @@
 import { useContext, useEffect, useState } from "react";
-import CartContext from "../store/CartContext";
 import { useParams } from "react-router-dom";
+import React from "react";
+import CartContext from "../store/CartContext";
 import classes from "./car.module.css";
 const Car = () => {
   const { carId } = useParams();
-  const cartCtx = useContext(CartContext);
+  const cartCtx= useContext(CartContext);
 
   const [car, setCar] = useState([]);
-
   useEffect(() => {
     fetch(
-      `https://car-management-5e8a2-default-rtdb.europe-west1.firebasedatabase.app/cars/${carId}.json`
+    `https://car-management-5e8a2-default-rtdb.europe-west1.firebasedatabase.app/cars/${carId}.json`
     )
       .then((response) => {
         if (response.ok) {
@@ -20,20 +20,28 @@ const Car = () => {
         }
       })
       .then((carData) => {
+       
         setCar(carData);
+            
+        
       });
   }, [carId]);
+    
 
-  const handleAddToCart = () => {
+  const handleAddToCart = () =>{
     cartCtx.addToCart(carId);
   };
 
-  const handleRemoveFromCart = () => {
+
+  const handleRemoveFromCart = () =>{
     cartCtx.removeFromCart(carId);
   };
 
+
+
   return (
-    <div className={classes.container}>
+    <>
+     <div className={classes.container}>
       <img className={classes.image} src={car.image} />
       <h1 className={classes.title}>
         {car.brand} {car.model}
@@ -51,6 +59,8 @@ const Car = () => {
         </div>
       )}
     </div>
+
+    </>
   );
 };
 

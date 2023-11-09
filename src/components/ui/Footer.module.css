@@ -2,17 +2,23 @@
     background-color: #222222;
     padding: 80px;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
     border-top: 2px solid #ddd;
+   text-align: center;
+    
 }
-.footer ul li strong {
+.one {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
     font-size: 1.2em; 
-    display: block; 
+    gap: 20px;
+    
+  }
+
+  .one span {
+    font-size: small;
   }
   
-  .footer ul li {
-    list-style: none; 
-    padding: 5px 0; 
-    font-size: 0.9em; 
+  .footer p {
+    margin-top: 80px;
   }

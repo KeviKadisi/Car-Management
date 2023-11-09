@@ -10,11 +10,12 @@
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 /* Style for the car image */
 .image {
-  max-width: 100px;
+ width: 300px;
   margin-right: 16px;
 }
 
@@ -48,4 +49,34 @@
   font-weight: bold;
   margin: 0;
   text-align: right; /* Align the price to the right */
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #170c08;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #22140f;
+  border-color: #22140f;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #170c08;
+}
+
+.actions .button {
+  background-color: #170c08;
+  color: white;
 }

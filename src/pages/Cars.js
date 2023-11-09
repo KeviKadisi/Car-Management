@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Card from "../components/ui/Card";
 import Carfilter from "../components/filters/Carfilter";
 import Container from "../components/layouts/Container";
-
+import React from "react";
 const Cars = () => {
   const [cars, setCars] = useState([]);
   useEffect(() => {

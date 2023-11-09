@@ -1,10 +1,11 @@
 import { useState, createContext } from "react";
-
+import React from "react";
 const CartContext = createContext({
   cart: [],
   addToCart: () => {},
   removeFromCart: () => {},
   isOnCart: () => {},
+  clearCart: () =>{}
 });
 
 export default CartContext;
@@ -27,11 +28,16 @@ export const CartContextProvider = ({ children }) => {
     return cartState.includes(id);
   };
 
+  const clearCart = () => {
+    return CartContext;
+  };
+
   const context = {
     cart: cartState,
     addToCart: addToCart,
     removeFromCart: removeFromCart,
     isOnCart: isOnCart,
+    clearCart: clearCart,
   };
 
   return (

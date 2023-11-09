@@ -7,10 +7,13 @@ const Navbar = () => {
     <nav className={classes.navbar}>
       <div className={classes.container}>
         <Link className={classes.brand} to="/">
-          Navbar
+          Auto-Management
         </Link>
         <Link className={classes.cars} to="/cars">
           Cars
+        </Link>
+        <Link className={classes.cars} to="/motorcycles">
+          Motorcycles
         </Link>
         <Link className={classes.cars} to="/cart">
           Cart

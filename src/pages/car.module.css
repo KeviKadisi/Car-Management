@@ -6,11 +6,9 @@
 }
 
 .image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+  width: 50%;
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .title {
@@ -40,7 +38,7 @@
   font-weight: bold;
   margin: 20px 0;
   text-align: center;
-  color: #e74c3c; /* Change the color to your preference */
+  color: #171010; /* Change the color to your preference */
 }
 
 .button {

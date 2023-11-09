@@ -7,6 +7,9 @@ import Cars from "./pages/Cars";
 import Car from "./pages/Car";
 import Footer from "./components/ui/Footer";
 import Cart from "./pages/Cart";
+import Motorcycles from "./pages/Motorcycles";
+import Motorcycle from "./pages/Motorcycle";
+import React from "react";
 function App() {
   return (
     <>
@@ -18,6 +21,8 @@ function App() {
               <Route index element={<Homepage />} />
               <Route path="cars" element={<Cars />} />
               <Route path="cars/:carId" element={<Car />} />
+              <Route path="motorcycles" element={<Motorcycles />} />
+              <Route path="motorcycles/:motoId" element={<Motorcycle />} />
               <Route path="cart" element={<Cart />} />
               <Route path="*" element={<NoPage />} />
             </Route>
