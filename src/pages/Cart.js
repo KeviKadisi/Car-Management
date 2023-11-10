@@ -110,7 +110,6 @@ cartCtx.clearCart();
    };
 
   const modalAction=(   <div className={classes.actions} >
-   
     {hasItems && <button className={classes.button} onClick={cartHandler} >Order</button>}
 </div>);
 
