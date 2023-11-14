@@ -20,4 +20,24 @@
   margin-left: 30px;
   color: #ffffff;
   text-decoration: none;
+ 
+}
+
+
+
+
+
+
+@media  (width < 600px) {
+
+  
+  .menu-open {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+
+  .cars {
+    margin-bottom: 10px;
+  }
 }
